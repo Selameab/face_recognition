@@ -1,3 +1,8 @@
+/* 
+ * File:   trainer_demo.cpp
+ * Author: ss
+ */
+
 #include "utils/utils.h"
 #include "trainer/trainer.h"
 
