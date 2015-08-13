@@ -1,5 +1,5 @@
 /* 
- * File:   Trainer.h
+ * File:   trainer.h
  * Author: ss
  */
 #include <opencv/cv.h>
@@ -13,10 +13,8 @@ class Trainer {
 public:
     Trainer(string, string);
     string addFace(Mat);
-    vector<Rect> detectFaces(Mat);
     virtual ~Trainer();
 private:
-    CascadeClassifier face_cascade;
     string storagePath;
 };
 

@@ -1,6 +1,9 @@
-#include "Trainer.h"
+#include "utils/utils.h"
+#include "trainer/trainer.h"
 
 int main(int argc, char* argv[]) {
+
+    Utils::Init();
 
     // Get Name
     string name;
@@ -18,7 +21,7 @@ int main(int argc, char* argv[]) {
         frame = cvQueryFrame(capture);
         keyPressed = cvWaitKey(30) & 0xFF;
         if (!frame.empty()) {
-            faces = trainer1.detectFaces(frame);
+            faces = Utils::detectFaces(frame);
             if (keyPressed == 32) {
                 if (faces.size() == 0)
                     cout << "Error: No face found in frame\n" << endl;
