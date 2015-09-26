@@ -25,3 +25,8 @@ target_link_libraries (classifier_demo  ${EXTRA_LIBS})
 target_link_libraries(classifier_demo ${OpenCV_LIBS})
 target_link_libraries(classifier_demo ${Boost_FILESYSTEM_LIBRARY} ${Boost_SYSTEM_LIBRARY})
 
+add_executable (tracker_demo tracker_demo.cpp ${EXTRA_LIBS})
+target_link_libraries (tracker_demo  ${EXTRA_LIBS})
+target_link_libraries(tracker_demo ${OpenCV_LIBS})
+target_link_libraries(tracker_demo ${Boost_FILESYSTEM_LIBRARY} ${Boost_SYSTEM_LIBRARY})
+
